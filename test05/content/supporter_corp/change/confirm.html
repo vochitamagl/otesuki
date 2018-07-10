@@ -127,7 +127,7 @@
 				<li class="create_breadcrumb"><a href="../../../index.html">otesuki</a></li>
 				<li class="create_breadcrumb"><a href="../../supporter/mypage.html">マイページ（支援者）</a></li>
 				<li class="create_breadcrumb"><a href="../change/index.html">利用者情報変更（法人）</a></li>
-				<li>ログイン情報変更画面</li>
+				<li>ログイン情報変更確認</li>
 			</ul>
 
 		</div>
@@ -149,63 +149,62 @@
 
 				<h1 class="ttl"><span>利用者情報変更</span></h1>
 
+				<!-- <span class="sub_ttl">ログイン情報の変更</span> -->
+
+				<p class="caption left">
+					下記の内容に変更いたします。よろしいですか？
+				</p>
+
 				<div id="login" class="box">
 
-					<h2>ログイン情報の変更（支援者法人）</h2>
+					<h2>ログイン情報の変更</h2>
 
 					<!-- FORM START -->
 					<div id="fm_form">
 
 						<form id="fm_action" action="" method="post">
 
-							<table>
+							<table class="confirm">
 								<tbody>
-								<tr>
-									<th>
-										<p>ユーザー名</p>
-									</th>
-									<td>
-										<input name="" value="" placeholder="otesuke">
-									</td>
-								</tr>
-								<tr>
-									<th>
-										<p>メールアドレス</p>
-									</th>
-									<td>
-										<input type="email" name="" value="" placeholder="otesuki@otesuki.jp">
-									</td>
-								</tr>
-								<tr>
-									<th>
-										<p>パスワード</p>
-									</th>
-									<td>
-										<div class="pass_check">
-
-										<input type="hidden" name="chk[0]" value="">
-										<input type="checkbox"  name="chk[0]" id="chk_0" value="パスワードを変更する">
-										<label for="chk_0" class="fixp">パスワードを変更する（半角の英字と数字を含む、８文字以上の文字列）</label>
-										</div>
-										<ul class="pass_list edit">
-											<li><span>現在のパスワード</span><input name="" value="" placeholder=""></li>
-											<li><span>新しいパスワード</span><input name="" value="" placeholder=""></li>
-											<li><span>新しいパスワード(確認)</span><input name="" value="" placeholder=""></li>
-										</ul>
-									</td>
-								</tr>
+									<tr>
+										<th>
+											<p>ユーザー名</p>
+										</th>
+										<td>
+											<p>otesuke</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<p>メールアドレス</p>
+										</th>
+										<td>
+											<p>otesuki@otesuki.jp</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<p>新しいパスワード</p>
+										</th>
+										<td>
+											<p>aiueo123</p>
+										</td>
+									</tr>
 								</tbody>
 							</table>
 
-							<div class="center">
-								<input type="submit" value="ログイン情報変更" class="btn green big">
-							</div>
+							<ul class="center">
+
+								<li><input type="button" value="変更を確定する" onclick="clickComplete()" class="btn green big"></li>
+								<li><input type="button" value="入力画面に戻る" onclick="clickReturn()" class="btn small border"></li>
+							</ul>
 
 						</form>
 
 					</div>
 					<!-- FORM END -->
 				</div>
+
 			</article>
 
 		</section>
@@ -242,7 +241,7 @@
 				<li class="create_breadcrumb"><a href="../../../index.html">otesuki</a></li>
 				<li class="create_breadcrumb"><a href="../../supporter/mypage.html">マイページ（支援者）</a></li>
 				<li class="create_breadcrumb"><a href="../change/index.html">利用者情報変更（法人）</a></li>
-				<li>ログイン情報変更画面</li>
+				<li>ログイン情報変更確認</li>
 			</ul>
 
 		</div>
