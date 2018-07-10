@@ -1640,8 +1640,20 @@ section.worker {
       }
     }
 
+  }
 
+  .detail{
+    max-width: 1000px;
+    border-radius: 20px;
+    padding: 30px 0;
 
+    .inner{
+      padding: 40px 50px;
+      border-radius: 20px;
+      background-color: #ffffff;
+      text-align: left;
+      position: relative;
+    }
   }
 }
 
