@@ -350,3 +350,24 @@ main {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 }
+.txt_form {
+	font-weight:normal;
+	display:inline-block;
+	width:350px;
+	vertical-align: top;
+	@include sp() {
+		display:block;
+		width:100%;
+	}
+}
+.title_form {
+	width:130px;
+	display:inline-block;
+	@include sp() {
+		display:block;
+		width:100%;
+	}
+}
+.vtc_top {
+	    vertical-align: top;
+}

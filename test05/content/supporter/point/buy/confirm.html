@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>詳細情報の変更（支援者個人） | otesuki</title>
+	<title>ポイント振込(支援者)確認 | otesuki</title>
 
 	<meta name="keywords" content="">
 	<meta name="description" content="">
@@ -48,7 +48,7 @@
 <!-- ------------ ALL START ------------ -->
 
 <!-- classにコンテンツディレクトリを付与する -->
-<div id="container" class="helper form">
+<div id="container" class="otesuki_list">
 
 	<!-- ------------ HEADER START ------------ -->
 
@@ -73,10 +73,10 @@
 			<!-- ナビゲーション -->
 
 			<ul class="support">
-				<li class="people"><a href="/"><img src="../../../../assets/img/common/icon/icon_people.svg" alt=""></a></li>
-				<li class="mail"><a href="/"><img src="../../../../assets/img/common/icon/icon_mail.svg" alt=""><span class="number">1</span></a></li>
-				<li class="hide_sp"><a href="/content/search/index.html" class="btn small blue search"><span>おしごと検索</span></a></li>
-				<li class="hide_pc search"><a href="/"><img src="../../../../assets/img/common/icon/icon_search.svg" alt=""></a></li>
+				<li class="people"><a href="/"><img src="../../../../assets/img/common/icon/icon_people.svg"></a></li>
+				<li class="mail"><a href="/"><img src="../../../../assets/img/common/icon/icon_mail.svg"><span class="number">1</span></a></li>
+				<li class="hide_sp"><a href="/content/search/index.html" class="btn small blue search"><span>お仕事検索</span></a></li>
+				<li class="hide_pc search"><a href="/"><img src="../../../../assets/img/common/icon/icon_search.svg"></a></li>
 			</ul>
 
 			<div class="nav_box">
@@ -98,7 +98,6 @@
 						</ul>
 
 					</div>
-
 				</nav>
 			</div>
 		</div>
@@ -107,9 +106,9 @@
 		<div class="header_list requester">
 			<div class="inner">
 				<ul>
-					<li class="active"><span>支援者でログイン中</span></li>
+					<li class="active"><span>依頼者でログイン中</span></li>
 					<li>ニックネーム</a></li>
-					<li><a href="/" class="switch"><span class="icon_switch"><span class="hide_sp">依頼者に切り替え</span></span></a></li>
+					<li><a href="/" class="switch"><span class="icon_switch"><span class="hide_sp">支援者に切り替え</span></span></a></li>
 				</ul>
 
 			</div>
@@ -125,11 +124,10 @@
 		<div class="in">
 
 			<ul>
-				<li class="home"><a href="../../../../index.html"></a></li>
-				<li class="create_breadcrumb"><a href="../../../../index.html">otesuki</a></li>
-				<li class="create_breadcrumb"><a href="../../mypage.html">マイページ（支援者）</a></li>
-				<li class="create_breadcrumb"><a href="../../change/index.html">利用者情報変更（個人）</a></li>
-				<li>詳細情報変更画面</li>
+				<li class="home"><a href="/index.html"></a></li>
+				<li class="create_breadcrumb"><a href="/">otesuki</a></li>
+				<li class="create_breadcrumb"><a href="/content/requester/mypage.html">マイページ</a></li>
+				<li>ポイント振込</li>
 			</ul>
 
 		</div>
@@ -142,170 +140,89 @@
 
 	<main role="main">
 
-
-
 		<!--  CONTENTS START -->
-		<section class="login change">
+		<section class="point login">
 
 			<article>
 
-				<h1 class="ttl"><span>利用者情報変更</span></h1>
-
-				<div class="box">
-
-					<h2>詳細情報の変更（支援者個人）</h2>
-
-					<!-- FORM START -->
-					<div id="fm_form">
-
-						<form id="fm_action" action="" method="post">
-
-							<table class="change">
-								<tbody>
-								<tr>
-									<th>
-										<p>住所</p>
-									</th>
-									<td>
-										<p><span class="arrow">郵便番号</span></p>
-										<ul class="number">
-											<li><input type="text" name="" placeholder="000" maxlength="3"><span>-</span></li>
-											<li><input type="text" name="" placeholder="1234"maxlength="4"></li>
-										</ul>
-										<p><span class="arrow">都道府県</span></p>
-										<input name="" value="" placeholder="">
-										<p><span class="arrow">市区町村</span></p>
-										<input name="" value="" placeholder="">
-										<p><span class="arrow">番地</span></p>
-										<input name="" value="" placeholder="">
-										<p><span class="arrow">建物名</span></p>
-										<input name="" value="" placeholder="">
-									</td>
-								</tr>
-								<tr>
-									<th>
-										<p>電話番号</p>
-									</th>
-									<td>
-										<input name="" value="" placeholder="">
-									</td>
-								</tr>
-								<tr>
-									<th>
-										<p>電話番号（携帯）</p>
-									</th>
-									<td>
-										<input name="" value="" placeholder="">
-									</td>
-								</tr>
-								<tr>
-									<th>
-										<p>資格</p>
-									</th>
-									<td>
-										<ul class="check_list">
-											<li>
-												<input type="radio" name="b" id="b_1" checked>
-												<label for="b_1">ケアマネージャー</label>
-											</li>
-											<li>
-												<input type="radio" name="b" id="b_2">
-												<label for="b_2">介護福祉士</label>
-											</li>
-										</ul>
-										<p><span class="arrow">その他資格1</span></p>
-										<input name="" value="" placeholder="">
-										<p><span class="arrow">その他資格</span></p>
-										<input name="" value="" placeholder="">
-									</td>
-								</tr>
-								<tr>
-									<th>
-										<p>資格証明書類</p>
-									</th>
-									<td>
-										<div class="input_image">
-											 <div class="image_box">
-                                                <div id="result">
-                                                    <img src="../../../../assets/img/content/article/noimage.png">
-                                                </div>
-                                                <input type="file" id="file" />
-                                            </div>
-                                            <div class="image_box">
-                                                <div id="result2">
-                                                    <img src="../../../../assets/img/content/article/noimage.png">
-                                                </div>
-                                                 <input type="file" id="file2" />
-                                            </div>
-
-                                            <div class="image_box">
-                                                <div id="result3">
-                                                    <img src="../../../../assets/img/content/article/noimage.png">
-                                                </div>
-                                                 <input type="file" id="file2" />
-                                            </div>
-
-                                            <div class="image_box">
-                                                <div id="result4">
-                                                    <img src="../../../../assets/img/content/article/noimage.png">
-                                                </div>
-                                                 <input type="file" id="file2" />
-                                            </div>
-										</div>
-									</td>
-								</tr>
-								</tbody>
-							</table>
-							<table class="change">
-								<tbody>
-
-								<tr>
-									<th>
-										<p>口座情報</p>
-									</th>
-									<td>
-										<p><span class="arrow">金融機関名</span></p>
-										<input type="text" name="" value="" placeholder="">
-										<p><span class="arrow">支店名</span></p>
-										<input type="text" name="" value="" placeholder="">
-										<p><span class="arrow">口座番号</span></p>
-										<input type="text" name="" value="" placeholder="">
-										<p><span class="arrow">口座名義(カナ)</span></p>
-										<input type="text" name="" value="" placeholder="">
-									</td>
-								</tr>
-								<tr>
-									<th>
-										<p>本人確認書類</p>
-									</th>
-									<td>
-										<div class="input_image">
-											<div id="result">
-												<img src="../../../../assets/img/content/article/noimage.png">
-											</div>
-											<input type="file" id="file"/>
-										</div>
-									</td>
-								</tr>
-								</tbody>
-							</table>
-
-
-							<div class="center">
-								<input type="submit" value="詳細情報変更" class="btn green big">
-							</div>
-
-						</form>
-
+				<h1 class="ttl"><span>ポイントを振り込む</span></h1>
+				<div class="point_box">
+						<div class="profile_icon"><img src="../../../../assets/img/content/article/profile.png"></div>
+					<div class="point_area">
+						<div class="point">
+							<span>0000</span>ポイント
+						</div>
+						<span class="day">2017/00/00</span>
+						<span class="surplus_box">失効予定のポイント<br class="hide_pc"><span class="hide_sp">：</span><span class="surplus_point">000</span>ポイント</span>
 					</div>
-					<!-- FORM END -->
+				</div>
+				<!-- FORM START -->
+				<div id="fm_form">
+
+					<form id="fm_action" action="" method="post">
+
+						<table class="confirm">
+							<tbody>
+							<tr>
+								<th>
+									<p>使用ポイント</p>
+								</th>
+								<td>
+									<p>000000000 point</p>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<p>ポイント換算金額</p>
+								</th>
+								<td>
+									<p>000000000 円</p>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<p>振込手数料</p>
+								</th>
+								<td>
+									<p>000000000 円</p>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<p>振込金額</p>
+								</th>
+								<td>
+									<p>000000000 円</p>
+								</td>
+							</tr>
+							<tr>
+								<th class="vtc_top">
+									<p>振込先口座</p>
+								</th>
+								<td>
+									<p>〇〇〇銀行</p>
+									<p>✕✕✕支店</p>
+									<p>0123456</p>
+									<p>オテスキ タロウ</p>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+						<ul class="center">
+							<li><input type="button" value="購入申請をして振込先を確認" onclick="clickComplete()" class="btn green big"></li>
+							<li><input type="button" value="入力画面に戻る" onclick="clickReturn()" class="btn small border"></li>
+						</ul>
+
+					</form>
 
 				</div>
+				<!-- FORM END -->
+
 			</article>
 
 		</section>
-		<!-- CONTENTS END -->
 
+		<!--  CONTENTS END -->
 
 		<section class="bnr">
 			<ul>
@@ -333,11 +250,10 @@
 		<div class="in">
 
 			<ul>
-				<li class="home"><a href="../../../../index.html"></a></li>
-				<li class="create_breadcrumb"><a href="../../../../index.html">otesuki</a></li>
-				<li class="create_breadcrumb"><a href="../../mypage.html">マイページ（支援者）</a></li>
-				<li class="create_breadcrumb"><a href="../../change/index.html">利用者情報変更（個人）</a></li>
-				<li>詳細情報変更画面</li>
+				<li class="home"><a href="/index.html"></a></li>
+				<li class="create_breadcrumb"><a href="/">otesuki</a></li>
+				<li class="create_breadcrumb"><a href="/content/requester/mypage.html">マイページ</a></li>
+				<li>ポイント購入</li>
 			</ul>
 
 		</div>

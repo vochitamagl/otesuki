@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>詳細情報の変更（支援者個人） | otesuki</title>
+	<title>ログイン情報変更(支援者個人)確認 | otesuki</title>
 
 	<meta name="keywords" content="">
 	<meta name="description" content="">
@@ -36,9 +36,6 @@
 	<script src="../../../../assets/js/drawer.js"></script>
 	<script src="../../../../assets/js/slick.min.js"></script>
 	<script src="../../../../assets/js/owl.carousel.js"></script>
-	<script src="../../../../assets/js/flatpickr.min.js"></script>
-	<script src="../../../../assets/js/ja.js"></script>
-	<script src="../../../../assets/js/remodal.min.js"></script>
 	<script src="../../../../assets/js/effect.js"></script>
 
 </head>
@@ -48,7 +45,7 @@
 <!-- ------------ ALL START ------------ -->
 
 <!-- classにコンテンツディレクトリを付与する -->
-<div id="container" class="helper form">
+<div id="container" class="change">
 
 	<!-- ------------ HEADER START ------------ -->
 
@@ -75,7 +72,7 @@
 			<ul class="support">
 				<li class="people"><a href="/"><img src="../../../../assets/img/common/icon/icon_people.svg" alt=""></a></li>
 				<li class="mail"><a href="/"><img src="../../../../assets/img/common/icon/icon_mail.svg" alt=""><span class="number">1</span></a></li>
-				<li class="hide_sp"><a href="/content/search/index.html" class="btn small blue search"><span>おしごと検索</span></a></li>
+				<li class="hide_sp"><a href="/" class="btn small blue search"><span>おしごと検索</span></a></li>
 				<li class="hide_pc search"><a href="/"><img src="../../../../assets/img/common/icon/icon_search.svg" alt=""></a></li>
 			</ul>
 
@@ -85,8 +82,8 @@
 
 					<div class="drawer_menu">
 						<ul class="item">
-							<li><a href="/content/requester/mypage.html" class="mypage"><span>マイページ</span></a></li>
-							<li><a href="/content/search/index.html" class="search"><span>支援者検索</span></a></li>
+							<li><a href="/content/helper/mypage/index.html" class="mypage"><span>マイページ</span></a></li>
+							<li><a href="/content/helper/search/index.html" class="search"><span>支援者検索</span></a></li>
 							<li><a href="/content/helper/schedule/index.html" class="schedule"><span>スケジュール</span></a></li>
 							<li><a href="/content/helper/work/index.html" class="work"><span>おしごと一覧</span></a></li>
 						</ul>
@@ -125,11 +122,11 @@
 		<div class="in">
 
 			<ul>
-				<li class="home"><a href="../../../../index.html"></a></li>
+				<li class="home"><a href="/index.html"></a></li>
 				<li class="create_breadcrumb"><a href="../../../../index.html">otesuki</a></li>
-				<li class="create_breadcrumb"><a href="../../mypage.html">マイページ（支援者）</a></li>
-				<li class="create_breadcrumb"><a href="../../change/index.html">利用者情報変更（個人）</a></li>
-				<li>詳細情報変更画面</li>
+				<li class="create_breadcrumb"><a href="../mypage.html">マイページ（支援者）</a></li>
+				<li class="create_breadcrumb"><a href="../change/index.html">利用者情報変更（個人）</a></li>
+				<li>ログイン情報変更画面</li>
 			</ul>
 
 		</div>
@@ -150,156 +147,54 @@
 			<article>
 
 				<h1 class="ttl"><span>利用者情報変更</span></h1>
+				<p class="caption left">
+					下記の内容に変更を完了いたしました。
+				</p>
+				<div id="login" class="box">
 
-				<div class="box">
-
-					<h2>詳細情報の変更（支援者個人）</h2>
+					<h2>ログイン情報の変更(支援者個人)</h2>
 
 					<!-- FORM START -->
 					<div id="fm_form">
 
 						<form id="fm_action" action="" method="post">
 
-							<table class="change">
+							<table class="confirm">
 								<tbody>
 								<tr>
 									<th>
-										<p>住所</p>
+										<p>ユーザー名</p>
 									</th>
 									<td>
-										<p><span class="arrow">郵便番号</span></p>
-										<ul class="number">
-											<li><input type="text" name="" placeholder="000" maxlength="3"><span>-</span></li>
-											<li><input type="text" name="" placeholder="1234"maxlength="4"></li>
-										</ul>
-										<p><span class="arrow">都道府県</span></p>
-										<input name="" value="" placeholder="">
-										<p><span class="arrow">市区町村</span></p>
-										<input name="" value="" placeholder="">
-										<p><span class="arrow">番地</span></p>
-										<input name="" value="" placeholder="">
-										<p><span class="arrow">建物名</span></p>
-										<input name="" value="" placeholder="">
+										<p>otesuke</p>
 									</td>
 								</tr>
 								<tr>
 									<th>
-										<p>電話番号</p>
+										<p>メールアドレス</p>
 									</th>
 									<td>
-										<input name="" value="" placeholder="">
+										<p>otesuki@otesuki.jp</p>
 									</td>
 								</tr>
 								<tr>
 									<th>
-										<p>電話番号（携帯）</p>
+										<p>新しいパスワード</p>
 									</th>
 									<td>
-										<input name="" value="" placeholder="">
-									</td>
-								</tr>
-								<tr>
-									<th>
-										<p>資格</p>
-									</th>
-									<td>
-										<ul class="check_list">
-											<li>
-												<input type="radio" name="b" id="b_1" checked>
-												<label for="b_1">ケアマネージャー</label>
-											</li>
-											<li>
-												<input type="radio" name="b" id="b_2">
-												<label for="b_2">介護福祉士</label>
-											</li>
-										</ul>
-										<p><span class="arrow">その他資格1</span></p>
-										<input name="" value="" placeholder="">
-										<p><span class="arrow">その他資格</span></p>
-										<input name="" value="" placeholder="">
-									</td>
-								</tr>
-								<tr>
-									<th>
-										<p>資格証明書類</p>
-									</th>
-									<td>
-										<div class="input_image">
-											 <div class="image_box">
-                                                <div id="result">
-                                                    <img src="../../../../assets/img/content/article/noimage.png">
-                                                </div>
-                                                <input type="file" id="file" />
-                                            </div>
-                                            <div class="image_box">
-                                                <div id="result2">
-                                                    <img src="../../../../assets/img/content/article/noimage.png">
-                                                </div>
-                                                 <input type="file" id="file2" />
-                                            </div>
-
-                                            <div class="image_box">
-                                                <div id="result3">
-                                                    <img src="../../../../assets/img/content/article/noimage.png">
-                                                </div>
-                                                 <input type="file" id="file2" />
-                                            </div>
-
-                                            <div class="image_box">
-                                                <div id="result4">
-                                                    <img src="../../../../assets/img/content/article/noimage.png">
-                                                </div>
-                                                 <input type="file" id="file2" />
-                                            </div>
-										</div>
-									</td>
-								</tr>
-								</tbody>
-							</table>
-							<table class="change">
-								<tbody>
-
-								<tr>
-									<th>
-										<p>口座情報</p>
-									</th>
-									<td>
-										<p><span class="arrow">金融機関名</span></p>
-										<input type="text" name="" value="" placeholder="">
-										<p><span class="arrow">支店名</span></p>
-										<input type="text" name="" value="" placeholder="">
-										<p><span class="arrow">口座番号</span></p>
-										<input type="text" name="" value="" placeholder="">
-										<p><span class="arrow">口座名義(カナ)</span></p>
-										<input type="text" name="" value="" placeholder="">
-									</td>
-								</tr>
-								<tr>
-									<th>
-										<p>本人確認書類</p>
-									</th>
-									<td>
-										<div class="input_image">
-											<div id="result">
-												<img src="../../../../assets/img/content/article/noimage.png">
-											</div>
-											<input type="file" id="file"/>
-										</div>
+										<p>aiueo123</p>
 									</td>
 								</tr>
 								</tbody>
 							</table>
 
-
-							<div class="center">
-								<input type="submit" value="詳細情報変更" class="btn green big">
-							</div>
-
-						</form>
+						<ul class="center">
+						<li><input type="button" value="変更を確定する" onclick="clickComplete()" class="btn green big"></li>
+						<li><input type="button" value="入力画面に戻る" onclick="clickReturn()" class="btn small border"></li>
+					</ul>
 
 					</div>
 					<!-- FORM END -->
-
 				</div>
 			</article>
 
@@ -311,12 +206,12 @@
 			<ul>
 				<li>
 					<a href="/">
-						<img src="../../../../assets/img/content/bnr/katsuyou.jpg">
+						<img src="../../../../assets/img/content/bnr/katsuyou.jpg" alt="">
 					</a>
 				</li>
 				<li>
 					<a href="/">
-						<img src="../../../../assets/img/content/bnr/syoukai.jpg">
+						<img src="../../../../assets/img/content/bnr/syoukai.jpg" alt="">
 					</a>
 				</li>
 			</ul>
@@ -333,11 +228,11 @@
 		<div class="in">
 
 			<ul>
-				<li class="home"><a href="../../../../index.html"></a></li>
+				<li class="home"><a href="/index.html"></a></li>
 				<li class="create_breadcrumb"><a href="../../../../index.html">otesuki</a></li>
-				<li class="create_breadcrumb"><a href="../../mypage.html">マイページ（支援者）</a></li>
-				<li class="create_breadcrumb"><a href="../../change/index.html">利用者情報変更（個人）</a></li>
-				<li>詳細情報変更画面</li>
+				<li class="create_breadcrumb"><a href="../mypage.html">マイページ（支援者）</a></li>
+				<li class="create_breadcrumb"><a href="../change/index.html">利用者情報変更（個人）</a></li>
+				<li>ログイン情報変更画面</li>
 			</ul>
 
 		</div>
