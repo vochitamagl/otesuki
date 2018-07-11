@@ -162,6 +162,15 @@
       }
     }
 
+    &.fl_right{
+      float: right;
+      bottom: 25px;
+      @include mq() {
+        float: none;
+        bottom: 0;
+      }
+    }
+
     &.search {
       span {
         color: #ffffff;

@@ -1702,7 +1702,7 @@ section.worker {
           padding-left: 10px;
           width: 78%;
           display: inline-block;
-
+          letter-spacing: 0;
 
           @include mq(sp) {
             width: 100%;
@@ -1794,7 +1794,7 @@ section.worker {
                 text-align: center;
               }
               .number{
-                @extend .font_size_26;
+                @extend .font_size_26;                
               }
               .rating_number {
                 padding-left: 10px;
@@ -1850,6 +1850,43 @@ section.worker {
             border-bottom: 0;
             padding-bottom: 0;
           }
+        }
+      }
+    }
+
+    ul.worker_items{
+      li{
+        width: 100%;
+        padding: 20px 0;
+        text-align: left;
+      }
+      li + li{
+        border-top: #ccc 1px solid;
+      }
+      
+      h3{
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        @extend .font_size_26;
+      }
+    }
+
+
+    .btn_detail{
+      margin: 100px 0;
+      @include mq() {
+        margin: 50px 0;
+      }
+      .btn.big{
+        width: 700px;
+        border-radius: 10px;
+        @include mq() {
+          width: 90%;
+          height: auto;
+          line-height: 1.5;
+          padding: 10px;
         }
       }
     }
