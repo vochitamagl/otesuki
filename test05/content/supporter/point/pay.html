@@ -5,38 +5,41 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>基本情報変更(支援者法人) | otesuki</title>
+	<title>ポイント振込(支援者)完了 | otesuki</title>
 
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 	<meta property="og:title" content="">
 	<meta property="og:site_name" content="">
 	<meta property="og:description" content="">
-	<meta property="og:image" content="http://---../../../assets/img/icon/fb.png">
+	<meta property="og:image" content="http://---../../../../assets/img/icon/fb.png">
 	<meta property="og:url" content="http://---">
 	<meta property="og:type" content="article">
 
-	<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/img/icon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="../../../assets/img/icon/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="../../../assets/img/icon/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="../../../assets/img/icon/site.webmanifest">
-	<link rel="mask-icon" href="../../../assets/img/icon/safari-pinned-tab.svg" color="#42b086">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/img/icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="../../../../assets/img/icon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="../../../../assets/img/icon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="../../../../assets/img/icon/site.webmanifest">
+	<link rel="mask-icon" href="../../../../assets/img/icon/safari-pinned-tab.svg" color="#42b086">
 	<meta name="msapplication-TileColor" content="#ffc40d">
 	<meta name="theme-color" content="#ffffff">
 
 	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">
 	<!--<meta name="viewport" content="width=1320"> -->
 
-	<link rel="stylesheet" href="../../../assets/css/style.css">
+	<link rel="stylesheet" href="../../../../assets/css/style.css">
 	<!--[if IE 7 ]> <html class="ie7"> <![endif]-->
 	<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
 	<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
-	<script src="../../../assets/js/drawer.js"></script>
-	<script src="../../../assets/js/slick.min.js"></script>
-	<script src="../../../assets/js/owl.carousel.js"></script>
-	<script src="../../../assets/js/effect.js"></script>
+	<script src="../../../../assets/js/drawer.js"></script>
+	<script src="../../../../assets/js/slick.min.js"></script>
+	<script src="../../../../assets/js/owl.carousel.js"></script>
+	<script src="../../../../assets/js/flatpickr.min.js"></script>
+	<script src="../../../../assets/js/ja.js"></script>
+	<script src="../../../../assets/js/remodal.min.js"></script>
+	<script src="../../../../assets/js/effect.js"></script>
 
 </head>
 
@@ -45,7 +48,7 @@
 <!-- ------------ ALL START ------------ -->
 
 <!-- classにコンテンツディレクトリを付与する -->
-<div id="container" class="change">
+<div id="container" class="otesuki_list">
 
 	<!-- ------------ HEADER START ------------ -->
 
@@ -56,8 +59,8 @@
 			<!-- 会社名ロゴ -->
 			<h1>
 				<a href="/index.html">
-					<img src="../../../assets/img/common/logo_tate.svg" alt="otesuki" class="hide_sp">
-					<img src="../../../assets/img/common/logo_yoko.svg" alt="otesuki" class="hide_pc">
+					<img src="../../../../assets/img/common/logo_tate.svg" alt="otesuki" class="hide_sp">
+					<img src="../../../../assets/img/common/logo_yoko.svg" alt="otesuki" class="hide_pc">
 				</a>
 			</h1>
 
@@ -70,10 +73,10 @@
 			<!-- ナビゲーション -->
 
 			<ul class="support">
-				<li class="people"><a href="/"><img src="../../../assets/img/common/icon/icon_people.svg"></a></li>
-				<li class="mail"><a href="/"><img src="../../../assets/img/common/icon/icon_mail.svg"><span class="number">1</span></a></li>
-				<li class="hide_sp"><a href="/" class="btn small blue search"><span>お仕事検索</span></a></li>
-				<li class="hide_pc search"><a href="/"><img src="../../../assets/img/common/icon/icon_search.svg"></a></li>
+				<li class="people"><a href="/"><img src="../../../../assets/img/common/icon/icon_people.svg"></a></li>
+				<li class="mail"><a href="/"><img src="../../../../assets/img/common/icon/icon_mail.svg"><span class="number">1</span></a></li>
+				<li class="hide_sp"><a href="/content/search/index.html" class="btn small blue search"><span>お仕事検索</span></a></li>
+				<li class="hide_pc search"><a href="/"><img src="../../../../assets/img/common/icon/icon_search.svg"></a></li>
 			</ul>
 
 			<div class="nav_box">
@@ -82,9 +85,8 @@
 
 					<div class="drawer_menu">
 						<ul class="item">
-							<li><a href="/content/helper/mypage/index.html" class="mypage"><span>マイページ</span></a></li>
-							<li><a href="" class="progress"><span>進捗一覧</span></a></li>
-							<li><a href="/content/helper/search/index.html" class="search"><span>支援者検索</span></a></li>
+							<li><a href="/content/requester/mypage.html" class="mypage"><span>マイページ</span></a></li>
+							<li><a href="/content/search/index.html" class="search"><span>支援者検索</span></a></li>
 							<li><a href="/content/helper/schedule/index.html" class="schedule"><span>スケジュール</span></a></li>
 							<li><a href="/content/helper/work/index.html" class="work"><span>おしごと一覧</span></a></li>
 						</ul>
@@ -96,7 +98,6 @@
 						</ul>
 
 					</div>
-
 				</nav>
 			</div>
 		</div>
@@ -105,9 +106,9 @@
 		<div class="header_list requester">
 			<div class="inner">
 				<ul>
-					<li class="active"><span>支援者でログイン中</span></li>
+					<li class="active"><span>依頼者でログイン中</span></li>
 					<li>ニックネーム</a></li>
-					<li><a href="/" class="switch"><span class="icon_switch"><span class="hide_sp">依頼者に切り替え</span></span></a></li>
+					<li><a href="/" class="switch"><span class="icon_switch"><span class="hide_sp">支援者に切り替え</span></span></a></li>
 				</ul>
 
 			</div>
@@ -125,9 +126,8 @@
 			<ul>
 				<li class="home"><a href="/index.html"></a></li>
 				<li class="create_breadcrumb"><a href="/">otesuki</a></li>
-				<li class="create_breadcrumb"><a href="../mypage.html">マイページ（⽀援者）</a></li>
-				<li class="create_breadcrumb"><a href="../change/index.html">利⽤者情報変更（法⼈）</a></li>
-				<li>基本情報変更画面</li>
+				<li class="create_breadcrumb"><a href="/content/requester/mypage.html">マイページ</a></li>
+				<li>ポイント振込</li>
 			</ul>
 
 		</div>
@@ -143,76 +143,40 @@
 
 
 		<!--  CONTENTS START -->
-		<section class="login change">
+		<section class="login oshigoto">
 
 			<article>
 
-				<h1 class="ttl "><span>利用者情報変更</span></h1>
+				<h1 class="ttl"><span>ポイントを振り込む</span></h1>
 
-				<div id="login" class="box">
+				<span class="sub_ttl">振り込み操作が完了しました。</span>
 
-					<h2>基本情報の変更（支援者法人）</h2>
+				<p class="caption left">
+					振り込み操作が完了しました。<br class="hide_sp"><br>
+					万が一、数日経過しても確認メールが届かない場合は、<br class="hide_sp">
+					しくは指定口座への入金がされない場合は、お手数ですが、お問い合わせフォームか、<br><br>
+					<a href="tel:0312345678">TEL 03-1234-5678</a> まで<br class="hide_pc">お電話でお問い合わせください。<br>
+					よろしくお願いいたします。
+					<br><br>
+					<span class="center"><a href="../../../supporter/mypage.html">マイページに戻る</a></span>
+				</p>
 
-					<!-- FORM START -->
-					<div id="fm_form">
-
-						<form id="fm_action" action="" method="post">
-
-							<table>
-								<tbody>
-								<tr>
-									<th>
-										<p>区分</p>
-									</th>
-									<td>
-										<p>法人</p>
-									</td>
-								</tr>
-								<tr>
-									<th>
-										<p>会社名</p>
-									</th>
-									<td>
-										<input name="" value="" placeholder="otesuki">
-									</td>
-								</tr>
-								<tr>
-									<th>
-										<p>担当者名</p>
-									</th>
-									<td>
-										<input name="" value="" placeholder="おてすきたろう">
-									</td>
-								</tr>
-								</tbody>
-							</table>
-
-							<div class="center">
-								<input type="submit" value="基本情報変更" class="btn btn_mdf green big">
-							</div>
-
-						</form>
-
-					</div>
-					<!-- FORM END -->
-
-				</div>
 			</article>
 
 		</section>
-		<!-- CONTENTS END -->
 
+		<!--  CONTENTS END -->
 
 		<section class="bnr">
 			<ul>
 				<li>
 					<a href="/">
-						<img src="../../../assets/img/content/bnr/katsuyou.jpg" alt="">
+						<img src="../../../../assets/img/content/bnr/katsuyou.jpg">
 					</a>
 				</li>
 				<li>
 					<a href="/">
-						<img src="../../../assets/img/content/bnr/syoukai.jpg" alt="">
+						<img src="../../../../assets/img/content/bnr/syoukai.jpg">
 					</a>
 				</li>
 			</ul>
@@ -231,9 +195,8 @@
 			<ul>
 				<li class="home"><a href="/index.html"></a></li>
 				<li class="create_breadcrumb"><a href="/">otesuki</a></li>
-				<li class="create_breadcrumb"><a href="../mypage.html">マイページ（⽀援者）</a></li>
-				<li class="create_breadcrumb"><a href="../change/index.html">利⽤者情報変更（法⼈）</a></li>
-				<li>基本情報変更画面</li>
+				<li class="create_breadcrumb"><a href="/content/requester/mypage.html">マイページ</a></li>
+				<li>ポイント購入</li>
 			</ul>
 
 		</div>
@@ -247,7 +210,7 @@
 	<footer>
 
 		<!-- 会社名ロゴ -->
-		<div class="logo"><a href="/index.html"><img src="../../../assets/img/common/logo_w.svg" alt="会社名"></a></div>
+		<div class="logo"><a href="/index.html"><img src="../../../../assets/img/common/logo_w.svg" alt="会社名"></a></div>
 
 
 		<!-- サイトマップ -->
@@ -315,7 +278,7 @@
 
 	<!-- ページトップスクロール -->
 	<div id="pageup">
-		<a href="#top"><img src="../../../assets/img/common/arrow/pageup.svg" alt="ページトップ"></a>
+		<a href="#top"><img src="../../../../assets/img/common/arrow/pageup.svg" alt="ページトップ"></a>
 	</div>
 
 

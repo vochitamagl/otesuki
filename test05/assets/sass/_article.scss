@@ -876,6 +876,14 @@ section.change {
     @extend .font_size_24;
   }
 
+  .text_link {
+    padding-top: 20px;
+    display: block;
+    color: #42b086;
+    text-decoration: underline;
+    @extend .font_size_16;
+  }
+
   div.list {
     width: 80%;
     margin: 0 auto 50px;
