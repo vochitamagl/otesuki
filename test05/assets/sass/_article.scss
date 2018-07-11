@@ -1648,20 +1648,212 @@ section.worker {
       }
     }
 
-  }
-
-  .detail{
-    max-width: 1000px;
-    border-radius: 20px;
-    padding: 30px 0;
-
-    .inner{
-      padding: 40px 50px;
-      border-radius: 20px;
+    .worker_detail{
+      padding: 20px 0;
       background-color: #ffffff;
-      text-align: left;
-      position: relative;
+      border-radius: 20px;
+      .inner {
+        margin-bottom: 20px;
+        padding: 20px 30px 20px 20px;
+        text-align: left;
+        position: relative;
+        clear: both;
+        letter-spacing: -.40em;
+        font-size: 0;
+
+
+        @include mq(sp) {
+          padding: 20px;
+        }
+
+        .box {
+          width: 22%;
+          display: inline-block;
+          vertical-align: top;
+          padding-right: 20px;
+          text-align: center;
+
+          @include mq(sp) {
+            width: 100%;
+            display: block;
+            text-align: left;
+            padding: 0 0 20px 0;
+          }
+
+          img {
+            text-align: center;
+            max-width: 120px;
+            max-height: 120px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 50%;
+            margin: 10px auto;
+
+            @include mq(sp) {
+              width: 60%;
+              margin: 0 auto;
+              text-align: center;
+            }
+          }
+        }
+
+        .area {
+          padding-left: 10px;
+          width: 78%;
+          display: inline-block;
+
+
+          @include mq(sp) {
+            width: 100%;
+            display: block;
+            padding: 0;
+          }
+
+          h3 {
+            text-align: left;
+            font-weight: bold;
+            @extend .font_size_24;
+
+            @include mq(sp) {
+              font-size: 20px;
+              text-align: center;
+            }
+          }
+
+
+          .gender {
+            font-weight: bold;
+            @extend .font_size_24;            
+          }
+
+          .quantity{
+            font-weight: bold;
+            @extend .font_size_24;
+            margin-left: 10px;
+            @include mq(sp) {
+              display: block;
+            }
+          }
+
+          .address {
+            display: block;
+            font-weight: bold;
+            @extend .font_size_16;
+            @include mq(sp) {
+              text-align: center;
+            }
+          }
+
+          h4 {
+            font-weight: bold;
+            margin-bottom: 5px;
+            //border-bottom: 1px solid $main-color;
+            @extend .font_size_16;
+
+            @include mq(sp) {
+              font-size: 16px;
+              padding: 0 0 0 10px;
+              //border-left: 5px solid $main-color;
+            }
+          }
+
+          .area_inner {
+
+            @include mq() {
+            }
+
+            .area_info{
+              padding: 0px 20px;
+              @include mq(sp) {
+                padding: 0;
+              }
+            }
+
+            .personal_information{
+              padding: 10px 20px;
+              @include mq(sp) {
+                padding: 10px 0;
+                text-align: center;
+              }
+            }
+
+            .rank {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-color: #ccc;
+              border-radius: 30px;
+              padding: 0 30px 0 20px;
+              margin-right: 50px;
+
+              @include mq() {
+                display: block;
+                flex-wrap: wrap;
+                margin-right: 0;
+                text-align: center;
+              }
+              .number{
+                @extend .font_size_26;
+              }
+              .rating_number {
+                padding-left: 10px;
+                font-weight: bold;
+                @extend .font_size_26;
+              }
+            }
+
+            .performance {
+              font-weight: bold;
+              @extend .font_size_22;
+
+              em {
+                padding-right: 10px;
+                @extend .font_size_26;
+              }
+            }
+          }
+        }
+      }
+
+      .pr{
+        padding: 10px 50px;
+        text-align: left;
+        @include mq() {
+          padding: 10px 20px;
+        }
+        h4{
+          font-weight: bold;
+        }
+        p {
+          padding: 10px 0 0;
+          border-radius: 5px;
+          @extend .font_size_16;
+        }
+        dl{
+          border-top: 1px solid #42b086;
+          span{
+            @extend .font_size_14;
+          }
+        }
+        dt, dd{
+          padding: 0px 5px 10px;
+          @extend .font_size_16;
+          border-bottom: 1px solid #42b086;
+        }
+        dt{
+          float: left;
+          width: 15%;
+          @include mq() {
+            float: none;
+            width: 100%;
+            border-bottom: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
     }
+
   }
 }
 
